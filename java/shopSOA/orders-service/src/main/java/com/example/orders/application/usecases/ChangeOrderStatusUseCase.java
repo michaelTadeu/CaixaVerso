@@ -1,8 +1,8 @@
-package com.example.orders.orders.application.usecases;
+package com.example.orders.application.usecases;
 
-import com.example.orders.orders.application.ports.OrderRepositoryPort;
-import com.example.orders.orders.domain.OrderStatus;
-import com.example.orders.orders.domain.rules.OrderStatusTransitionPolicy;
+import com.example.orders.application.ports.OrderRepositoryPort;
+import com.example.orders.domain.OrderStatus;
+import com.example.orders.domain.rules.OrderStatusTransitionPolicy;
 
 import java.util.UUID;
 

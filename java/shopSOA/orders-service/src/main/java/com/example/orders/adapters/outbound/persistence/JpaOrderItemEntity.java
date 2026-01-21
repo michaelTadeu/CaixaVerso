@@ -1,4 +1,4 @@
-package com.example.orders.orders.adapters.outbound.persistence;
+package com.example.orders.adapters.outbound.persistence;
 
 import jakarta.persistence.*;
 
@@ -26,7 +26,8 @@ public class JpaOrderItemEntity {
   @Column(nullable = false, precision = 19, scale = 2)
   private BigDecimal unitPrice;
 
-  protected JpaOrderItemEntity() {}
+  protected JpaOrderItemEntity() {
+  }
 
   public JpaOrderItemEntity(JpaOrderEntity order, UUID productId, int quantity, BigDecimal unitPrice) {
     this.order = order;
@@ -35,9 +36,23 @@ public class JpaOrderItemEntity {
     this.unitPrice = unitPrice;
   }
 
-  public UUID getId() { return id; }
-  public JpaOrderEntity getOrder() { return order; }
-  public UUID getProductId() { return productId; }
-  public int getQuantity() { return quantity; }
-  public BigDecimal getUnitPrice() { return unitPrice; }
+  public UUID getId() {
+    return id;
+  }
+
+  public JpaOrderEntity getOrder() {
+    return order;
+  }
+
+  public UUID getProductId() {
+    return productId;
+  }
+
+  public int getQuantity() {
+    return quantity;
+  }
+
+  public BigDecimal getUnitPrice() {
+    return unitPrice;
+  }
 }

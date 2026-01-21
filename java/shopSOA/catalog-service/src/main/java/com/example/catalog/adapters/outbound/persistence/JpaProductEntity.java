@@ -1,4 +1,4 @@
-package com.example.shop.catalog.adapters.outbound.persistence;
+package com.example.catalog.adapters.outbound.persistence;
 
 import jakarta.persistence.*;
 

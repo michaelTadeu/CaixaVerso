@@ -1,6 +1,6 @@
-package com.example.orders.orders.adapters.outbound.persistence;
+package com.example.orders.adapters.outbound.persistence;
 
-import com.example.orders.orders.domain.OrderStatus;
+import com.example.orders.domain.OrderStatus;
 import jakarta.persistence.*;
 
 import java.util.ArrayList;
@@ -20,15 +20,27 @@ public class JpaOrderEntity {
   @OneToMany(mappedBy = "order", cascade = CascadeType.ALL, orphanRemoval = true)
   private List<JpaOrderItemEntity> items = new ArrayList<>();
 
-  protected JpaOrderEntity() {}
+  protected JpaOrderEntity() {
+  }
 
   public JpaOrderEntity(UUID id, OrderStatus status) {
     this.id = id;
     this.status = status;
   }
 
-  public UUID getId() { return id; }
-  public OrderStatus getStatus() { return status; }
-  public void setStatus(OrderStatus status) { this.status = status; }
-  public List<JpaOrderItemEntity> getItems() { return items; }
+  public UUID getId() {
+    return id;
+  }
+
+  public OrderStatus getStatus() {
+    return status;
+  }
+
+  public void setStatus(OrderStatus status) {
+    this.status = status;
+  }
+
+  public List<JpaOrderItemEntity> getItems() {
+    return items;
+  }
 }

@@ -1,4 +1,4 @@
-package com.example.shop.orders.domain;
+package com.example.orders.domain;
 
 public enum OrderStatus {
   NEW,

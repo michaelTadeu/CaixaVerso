@@ -1,12 +1,12 @@
-package com.example.orders.orders.config;
+package com.example.orders.config;
 
-import com.example.orders.orders.adapters.outbound.persistence.OrderRepositoryJpaAdapter;
-import com.example.orders.orders.adapters.outbound.persistence.SpringDataOrderRepository;
-import com.example.orders.orders.application.ports.CatalogQueryPort;
-import com.example.orders.orders.application.ports.OrderRepositoryPort;
-import com.example.orders.orders.application.usecases.ChangeOrderStatusUseCase;
-import com.example.orders.orders.application.usecases.CreateOrderUseCase;
-import com.example.orders.orders.application.usecases.GetOrderUseCase;
+import com.example.orders.adapters.outbound.persistence.OrderRepositoryJpaAdapter;
+import com.example.orders.adapters.outbound.persistence.SpringDataOrderRepository;
+import com.example.orders.application.ports.CatalogQueryPort;
+import com.example.orders.application.ports.OrderRepositoryPort;
+import com.example.orders.application.usecases.ChangeOrderStatusUseCase;
+import com.example.orders.application.usecases.CreateOrderUseCase;
+import com.example.orders.application.usecases.GetOrderUseCase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.client.RestClient;

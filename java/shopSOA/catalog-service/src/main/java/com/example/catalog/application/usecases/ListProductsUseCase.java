@@ -1,7 +1,7 @@
-package com.example.shop.catalog.application.usecases;
+package com.example.catalog.application.usecases;
 
-import com.example.shop.catalog.application.ports.ProductRepositoryPort;
-import com.example.shop.catalog.domain.Product;
+import com.example.catalog.application.ports.ProductRepositoryPort;
+import com.example.catalog.domain.Product;
 
 import java.util.List;
 

@@ -1,10 +1,10 @@
-package com.example.catalog.catalog.config;
+package com.example.catalog.config;
 
-import com.example.catalog.catalog.adapters.outbound.persistence.ProductRepositoryJpaAdapter;
-import com.example.catalog.catalog.adapters.outbound.persistence.SpringDataProductRepository;
-import com.example.catalog.catalog.application.ports.ProductRepositoryPort;
-import com.example.catalog.catalog.application.usecases.GetProductUseCase;
-import com.example.catalog.catalog.application.usecases.ListProductsUseCase;
+import com.example.catalog.adapters.outbound.persistence.ProductRepositoryJpaAdapter;
+import com.example.catalog.adapters.outbound.persistence.SpringDataProductRepository;
+import com.example.catalog.application.ports.ProductRepositoryPort;
+import com.example.catalog.application.usecases.GetProductUseCase;
+import com.example.catalog.application.usecases.ListProductsUseCase;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

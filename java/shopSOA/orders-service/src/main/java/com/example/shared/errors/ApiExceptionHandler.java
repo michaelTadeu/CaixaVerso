@@ -1,4 +1,4 @@
-package com.example.shop.shared.errors;
+package com.example.shared.errors;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ProblemDetail;

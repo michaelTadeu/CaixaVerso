@@ -1,10 +1,10 @@
-package com.example.orders.orders.adapters.inbound.rest;
+package com.example.orders.adapters.inbound.rest;
 
-import com.example.orders.orders.application.usecases.ChangeOrderStatusUseCase;
-import com.example.orders.orders.application.usecases.CreateOrderUseCase;
-import com.example.orders.orders.application.usecases.GetOrderUseCase;
-import com.example.orders.orders.domain.Order;
-import com.example.orders.orders.domain.OrderStatus;
+import com.example.orders.application.usecases.ChangeOrderStatusUseCase;
+import com.example.orders.application.usecases.CreateOrderUseCase;
+import com.example.orders.application.usecases.GetOrderUseCase;
+import com.example.orders.domain.Order;
+import com.example.orders.domain.OrderStatus;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Min;
 import jakarta.validation.constraints.NotEmpty;
@@ -51,8 +51,15 @@ public class OrdersController {
     return ResponseEntity.noContent().build();
   }
 
-  public record CreateOrderRequest(@NotEmpty List<CreateItem> items) {}
-  public record CreateItem(@NotNull UUID productId, @Min(1) int quantity) {}
-  public record CreateOrderResponse(UUID id, OrderStatus status, BigDecimal total) {}
-  public record ChangeStatusRequest(@NotNull String newStatus) {}
+  public record CreateOrderRequest(@NotEmpty List<CreateItem> items) {
+  }
+
+  public record CreateItem(@NotNull UUID productId, @Min(1) int quantity) {
+  }
+
+  public record CreateOrderResponse(UUID id, OrderStatus status, BigDecimal total) {
+  }
+
+  public record ChangeStatusRequest(@NotNull String newStatus) {
+  }
 }

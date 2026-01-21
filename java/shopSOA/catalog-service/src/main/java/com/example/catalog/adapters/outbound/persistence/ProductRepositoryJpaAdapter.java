@@ -1,7 +1,7 @@
-package com.example.shop.catalog.adapters.outbound.persistence;
+package com.example.catalog.adapters.outbound.persistence;
 
-import com.example.shop.catalog.application.ports.ProductRepositoryPort;
-import com.example.shop.catalog.domain.Product;
+import com.example.catalog.application.ports.ProductRepositoryPort;
+import com.example.catalog.domain.Product;
 
 import java.util.List;
 import java.util.Optional;

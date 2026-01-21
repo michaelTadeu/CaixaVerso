@@ -1,6 +1,6 @@
-package com.example.shop.catalog.application.ports;
+package com.example.catalog.application.ports;
 
-import com.example.shop.catalog.domain.Product;
+import com.example.catalog.domain.Product;
 
 import java.util.List;
 import java.util.Optional;

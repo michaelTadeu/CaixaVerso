@@ -1,8 +1,8 @@
-package com.example.shop.catalog.application.usecases;
+package com.example.catalog.application.usecases;
 
-import com.example.shop.catalog.application.ports.ProductRepositoryPort;
-import com.example.shop.catalog.domain.Product;
-import com.example.shop.shared.errors.NotFoundException;
+import com.example.catalog.application.ports.ProductRepositoryPort;
+import com.example.catalog.domain.Product;
+import com.example.shared.errors.NotFoundException;
 
 import java.util.UUID;
 

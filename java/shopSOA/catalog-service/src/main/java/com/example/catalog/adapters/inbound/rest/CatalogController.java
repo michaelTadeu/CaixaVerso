@@ -1,8 +1,8 @@
-package com.example.shop.catalog.adapters.inbound.rest;
+package com.example.catalog.adapters.inbound.rest;
 
-import com.example.shop.catalog.application.usecases.GetProductUseCase;
-import com.example.shop.catalog.application.usecases.ListProductsUseCase;
-import com.example.shop.catalog.domain.Product;
+import com.example.catalog.application.usecases.GetProductUseCase;
+import com.example.catalog.application.usecases.ListProductsUseCase;
+import com.example.catalog.domain.Product;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;

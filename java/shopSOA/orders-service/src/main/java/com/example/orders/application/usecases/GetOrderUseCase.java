@@ -1,8 +1,8 @@
-package com.example.orders.orders.application.usecases;
+package com.example.orders.application.usecases;
 
-import com.example.orders.orders.application.ports.OrderRepositoryPort;
-import com.example.orders.orders.domain.Order;
-import com.example.orders.shared.errors.NotFoundException;
+import com.example.orders.application.ports.OrderRepositoryPort;
+import com.example.orders.domain.Order;
+import com.example.shared.errors.NotFoundException;
 
 import java.util.UUID;
 

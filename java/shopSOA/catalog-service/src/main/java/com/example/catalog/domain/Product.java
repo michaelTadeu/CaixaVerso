@@ -1,4 +1,4 @@
-package com.example.shop.catalog.domain;
+package com.example.catalog.domain;
 
 import java.math.BigDecimal;
 import java.util.UUID;
