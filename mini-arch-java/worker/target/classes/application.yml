@@ -1,0 +1,11 @@
+server:
+  port: 3001
+
+app:
+  dataDir: ../data
+  inboxFile: ${app.dataDir}/inbox/events.ndjson
+  offsetFile: ${app.dataDir}/inbox/offset.txt
+  statsFile: ${app.dataDir}/out/stats.json
+
+worker:
+  intervalMs: 2000

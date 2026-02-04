@@ -1,0 +1,7 @@
+server:
+  port: 3000
+
+app:
+  dataDir: ../data
+  inboxFile: ${app.dataDir}/inbox/events.ndjson
+  statsFile: ${app.dataDir}/out/stats.json

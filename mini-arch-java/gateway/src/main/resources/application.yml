@@ -1,0 +1,5 @@
+server:
+  port: 8080
+
+gateway:
+  apiBaseUrl: http://localhost:3000
