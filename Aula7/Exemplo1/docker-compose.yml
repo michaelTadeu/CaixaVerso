@@ -1,0 +1,12 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: mini-dw-postgres
+    environment:
+      POSTGRES_USER: dw
+      POSTGRES_PASSWORD: dw
+      POSTGRES_DB: dw_demo
+    ports:
+      - "5436:5432"
+    volumes:
+      - ./scripts:/scripts:ro
