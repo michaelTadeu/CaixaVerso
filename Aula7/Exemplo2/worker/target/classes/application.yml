@@ -1,0 +1,20 @@
+spring:
+  application:
+    name: dw-worker
+  datasource:
+    url: ${SPRING_DATASOURCE_URL:jdbc:postgresql://localhost:5435/dw_demo}
+    username: ${SPRING_DATASOURCE_USERNAME:dw}
+    password: ${SPRING_DATASOURCE_PASSWORD:dw}
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+
+etl:
+  schedule:
+    cron: ${ETL_SCHEDULE_CRON:0 */5 * * * *}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: health,info
